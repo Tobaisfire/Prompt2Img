@@ -5,7 +5,7 @@ from diffusers import StableDiffusionPipeline
 def prompt2img(model,prompt):
     if model == 'Stable-1':
         modelid = "runwayml/stable-diffusion-v1-5"
-        device = "cpu"
+        device = "gpu"
 
         pipe = StableDiffusionPipeline.from_pretrained(modelid)
         pipe.to(device)
