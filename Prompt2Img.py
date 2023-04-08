@@ -1,7 +1,7 @@
 import streamlit as st
 
 from diffusers import StableDiffusionPipeline
-
+@st.cache
 def prompt2img(model,prompt):
     if model == 'Stable-1':
         modelid = "runwayml/stable-diffusion-v1-5"
