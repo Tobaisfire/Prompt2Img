@@ -2,3 +2,4 @@ streamlit
 diffusers
 transformers
 pillow
+torch
